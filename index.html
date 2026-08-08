@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alex Chen — Full Stack Developer and UI/UX Designer">
+  <title>Alex Chen — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="loader">
+    <div class="loader-logo"><span>Meskatul</span> Masabhi Shanto<div class="loader-line"></div>
+    </div>
+  </div>
+
+  <div class="background">
+    <div class="grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div id="mouseGlow"></div>
+  </div>
+
+  <div class="cursor"><i></i></div>
+
+  <header id="header">
+    <div class="progress"><span id="progressBar"></span></div>
+    <div class="container nav-wrap">
+      <a class="logo" href="#home"><span>SHA</span>NTO</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav id="nav">
+        <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+        <a href="#services">Services</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
+        <a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="availability"><span class="pulse"></span> Available for Work</div>
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Alex Chen</h1>
+          <div class="typing"><span id="typingText"></span><b>|</b></div>
+          <p class="lead">I'm a passionate developer and designer obsessed with building exceptional digital
+            experiences. I bridge the gap between elegant engineering and pixel-perfect design.</p>
+          <div class="actions">
+            <a class="btn primary" href="#contact">Hire Me</a>
+            <a class="btn secondary" href="#" id="cvBtn">Download CV</a>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="GitHub">GH</a><a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">𝕏</a><a href="#" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal">
+          <div class="ring ring-a"></div>
+          <div class="ring ring-b"></div>
+          <div class="glass-card back-card one"></div>
+          <div class="glass-card back-card two"></div>
+          <div class="avatar">
+            <div>AC</div>
+          </div>
+          <div class="float-badge react">⚛ <span>React</span></div>
+          <div class="float-badge design">◆ <span>Design</span></div>
+          <div class="tech tech-react">⚛</div>
+          <div class="tech tech-ts">TS</div>
+          <div class="tech tech-node">JS</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="reveal">
+          <div class="section-head">
+            <h2>About Me</h2><span></span>
+          </div>
+          <div class="profile-row">
+            <div class="mini-avatar">AC</div>
+            <p>I'm a multidisciplinary developer and designer based in San Francisco. I believe in creating software
+              that is not only robust under the hood but also delightful to interact with.</p>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong data-count="5">0</strong><b>+</b><small>Years Experience</small></div>
+            <div class="stat"><strong data-count="50">0</strong><b>+</b><small>Projects Completed</small></div>
+            <div class="stat"><strong data-count="30">0</strong><b>+</b><small>Happy Clients</small></div>
+            <div class="stat"><strong data-count="10">0</strong><b>+</b><small>Awards Won</small></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="text-stack">
+            <p>My journey began with a curiosity about how the web works, which quickly turned into a passion for
+              building it. Over the years, I've honed my skills in frontend and backend engineering, while developing a
+              keen eye for aesthetics and user experience.</p>
+            <p>When I'm not writing code or pushing pixels, you can find me exploring new coffee shops, hiking trails,
+              or reading about the latest tech trends.</p>
+          </div>
+          <div class="timeline">
+            <div><span>2023</span>
+              <h4>Senior Frontend Developer</h4><small>TechCorp</small>
+            </div>
+            <div><span>2021</span>
+              <h4>Full Stack Developer</h4><small>StartupXYZ</small>
+            </div>
+            <div><span>2019</span>
+              <h4>UI/UX Designer</h4><small>DesignStudio</small>
+            </div>
+            <div><span>2018</span>
+              <h4>B.S. Computer Science</h4><small>MIT</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>Skills & Expertise</h2><span></span>
+          <p>A modern toolkit for turning ideas into production-ready digital experiences.</p>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card reveal">
+            <h3>Frontend</h3>
+            <div class="skill"><span>React / Next.js</span><b>95%</b><i><em style="width:95%"></em></i></div>
+            <div class="skill"><span>JavaScript / TypeScript</span><b>92%</b><i><em style="width:92%"></em></i></div>
+            <div class="skill"><span>HTML / CSS</span><b>98%</b><i><em style="width:98%"></em></i></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Backend</h3>
+            <div class="skill"><span>Node.js</span><b>90%</b><i><em style="width:90%"></em></i></div>
+            <div class="skill"><span>REST / GraphQL APIs</span><b>88%</b><i><em style="width:88%"></em></i></div>
+            <div class="skill"><span>Python</span><b>80%</b><i><em style="width:80%"></em></i></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Database</h3>
+            <div class="skill"><span>PostgreSQL</span><b>88%</b><i><em style="width:88%"></em></i></div>
+            <div class="skill"><span>MongoDB</span><b>85%</b><i><em style="width:85%"></em></i></div>
+            <div class="skill"><span>Redis</span><b>76%</b><i><em style="width:76%"></em></i></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>UI/UX</h3>
+            <div class="skill"><span>Figma</span><b>94%</b><i><em style="width:94%"></em></i></div>
+            <div class="skill"><span>Design Systems</span><b>90%</b><i><em style="width:90%"></em></i></div>
+            <div class="skill"><span>Prototyping</span><b>86%</b><i><em style="width:86%"></em></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>Services</h2><span></span>
+          <p>From first sketch to scalable production, I build with purpose.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service reveal">
+            <div class="icon">⌘</div>
+            <h3>Web Development</h3>
+            <p>Building scalable, performant web applications with modern tech stacks.</p>
+          </article>
+          <article class="service reveal">
+            <div class="icon">◇</div>
+            <h3>UI/UX Design</h3>
+            <p>Crafting intuitive interfaces that delight users and drive engagement.</p>
+          </article>
+          <article class="service reveal">
+            <div class="icon">API</div>
+            <h3>API Development</h3>
+            <p>Designing robust RESTful & GraphQL APIs for seamless integrations.</p>
+          </article>
+          <article class="service reveal">
+            <div class="icon">↗</div>
+            <h3>Responsive Design</h3>
+            <p>Pixel-perfect layouts that work flawlessly across all devices.</p>
+          </article>
+          <article class="service reveal">
+            <div class="icon">⌕</div>
+            <h3>SEO Optimization</h3>
+            <p>Boosting visibility and organic reach through technical SEO best practices.</p>
+          </article>
+          <article class="service reveal">
+            <div class="icon">⚡</div>
+            <h3>Performance Optimization</h3>
+            <p>Achieving sub-second load times and 95+ Lighthouse scores.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>Featured Projects</h2><span></span>
+          <p>A selection of products and experiences built from the ground up.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project reveal">
+            <div class="project-art art-1"><span>EC</span></div>
+            <div class="project-body">
+              <h3>E-Commerce Platform</h3>
+              <p>Full-featured online store with real-time inventory, secure checkout, and admin dashboard.</p>
+              <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+              <div class="project-links"><a href="#">↗ Live Demo</a><a href="#">GitHub</a></div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-art art-2"><span>AI</span></div>
+            <div class="project-body">
+              <h3>AI Analytics Dashboard</h3>
+              <p>Analytics dashboard with AI-powered insights, predictive modeling, and custom reports.</p>
+              <div class="tags"><span>Next.js</span><span>Python</span><span>AI</span></div>
+              <div class="project-links"><a href="#">↗ Live Demo</a><a href="#">GitHub</a></div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-art art-3"><span>DS</span></div>
+            <div class="project-body">
+              <h3>Enterprise Design System</h3>
+              <p>Comprehensive React component library used by 20+ teams to maintain visual consistency.</p>
+              <div class="tags"><span>React</span><span>Figma</span><span>Storybook</span></div>
+              <div class="project-links"><a href="#">↗ Live Demo</a><a href="#">GitHub</a></div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-art art-4"><span>SAAS</span></div>
+            <div class="project-body">
+              <h3>SaaS Management Platform</h3>
+              <p>Multi-tenant B2B platform with role-based access control and automated billing.</p>
+              <div class="tags"><span>TypeScript</span><span>Node</span><span>Stripe</span></div>
+              <div class="project-links"><a href="#">↗ Live Demo</a><a href="#">GitHub</a></div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-art art-5"><span>MB</span></div>
+            <div class="project-body">
+              <h3>Mobile Banking App</h3>
+              <p>Fintech application serving 50k+ users with instant transfers and spending analysis.</p>
+              <div class="tags"><span>React Native</span><span>API</span><span>UX</span></div>
+              <div class="project-links"><a href="#">↗ Live Demo</a><a href="#">GitHub</a></div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-art art-6"><span>3D</span></div>
+            <div class="project-body">
+              <h3>Interactive Portfolio Generator</h3>
+              <p>A drag-and-drop tool that generates stunning 3D portfolios without code.</p>
+              <div class="tags"><span>Three.js</span><span>React</span><span>WebGL</span></div>
+              <div class="project-links"><a href="#">↗ Live Demo</a><a href="#">GitHub</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>Experience</h2><span></span>
+          <p>A track record of building products, teams, and better digital experiences.</p>
+        </div>
+        <div class="experience">
+          <article class="experience-item reveal"><span class="date">2023 — Present</span>
+            <h3>Senior Frontend Developer</h3>
+            <h4>TechCorp</h4>
+            <p>Led frontend architecture for enterprise SaaS platform serving 100k+ users. Improved performance by 40%
+              and established a comprehensive component library.</p>
+          </article>
+          <article class="experience-item reveal"><span class="date">2021 — 2023</span>
+            <h3>Full Stack Developer</h3>
+            <h4>StartupXYZ</h4>
+            <p>Built end-to-end features for a B2C marketplace. Reduced API response time by 60% with caching strategies
+              and optimized database queries.</p>
+          </article>
+          <article class="experience-item reveal"><span class="date">2019 — 2021</span>
+            <h3>UI/UX Designer</h3>
+            <h4>DesignStudio</h4>
+            <p>Designed and developed brand identities and web presences for 20+ clients. Won 3 industry design awards
+              for innovative interactive experiences.</p>
+          </article>
+          <article class="experience-item reveal"><span class="date">2018 — 2019</span>
+            <h3>Junior Web Developer</h3>
+            <h4>CreativeWorks</h4>
+            <p>Built and maintained client websites. First professional experience with React and modern JavaScript
+              ecosystems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2>Testimonials</h2><span></span>
+          <p>What collaborators and clients say about working together.</p>
+        </div>
+        <div class="testimonial-wrap reveal">
+          <button id="prevTest">‹</button>
+          <div class="testimonial">
+            <div class="quote">“</div>
+            <p id="quoteText"></p>
+            <h4 id="quoteName"></h4><span id="quoteRole"></span>
+            <div class="dots" id="dots"></div>
+          </div>
+          <button id="nextTest">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container two-col contact-grid">
+        <div class="reveal">
+          <div class="section-head">
+            <h2>Let's Work Together</h2><span></span>
+          </div>
+          <p class="lead">Have a project in mind or just want to say hello? My inbox is always open.</p>
+          <div class="contact-list">
+            <div><b>✉</b><span><small>Email</small>alex.chen@example.com</span></div>
+            <div><b>☎</b><span><small>Phone</small>+1 (555) 123-4567</span></div>
+            <div><b>⌖</b><span><small>Location</small>San Francisco, CA</span></div>
+          </div>
+          <div class="map">
+            <div class="map-pin"></div>
+            <div class="map-line l1"></div>
+            <div class="map-line l2"></div>
+          </div>
+        </div>
+        <div class="form-card reveal">
+          <h3>Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-row"><label>Name<input id="name" type="text"
+                  placeholder="John Doe"></label><label>Email<input id="email" type="email"
+                  placeholder="john@example.com"></label></div>
+            <label>Subject<input id="subject" type="text" placeholder="Project Inquiry"></label>
+            <label>Message<textarea id="message" placeholder="Tell me about your project..."></textarea></label>
+            <button class="btn primary full" type="submit"><span>Send Message</span> ↗</button>
+            <p id="formStatus" class="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="logo" href="#home"><span>Alex</span> Chen</a>
+        <p>Crafting premium digital experiences through elegant code and meticulous design.</p>
+        <div class="footer-socials"><a href="#">GH</a><a href="#">in</a><a href="#">𝕏</a><a href="#">ig</a></div>
+      </div>
+      <div>
+        <h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a
+          href="#projects">Projects</a>
+      </div>
+      <div>
+        <h4>Services</h4><a href="#services">Web Development</a><a href="#services">UI/UX Design</a><a
+          href="#services">API Development</a><a href="#services">SEO Optimization</a>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <p>alex.chen@example.com</p>
+        <p>+1 (555) 123-4567</p>
+        <p>San Francisco, CA</p><span class="remote">● Available for remote work</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Alex Chen. All rights reserved.</p><button id="topBtn">↑</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
