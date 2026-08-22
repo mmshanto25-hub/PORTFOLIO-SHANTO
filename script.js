@@ -82,9 +82,14 @@ $("#year").textContent = new Date().getFullYear();
 
 $("#cvBtn").addEventListener("click", e => {
   e.preventDefault();
-  const cv = `Alex Chen\nFull Stack Developer & UI/UX Designer\n\nSkills: HTML, CSS, JavaScript, React, TypeScript, Node.js, Python, PostgreSQL, MongoDB, Figma`;
-  const blob = new Blob([cv], { type: "text/plain" }), url = URL.createObjectURL(blob), a = document.createElement("a");
-  a.href = url; a.download = "Alex-Chen-CV.txt"; a.click(); URL.revokeObjectURL(url);
+
+  const a = document.createElement("a");
+  a.href = "IMG/CV.png";
+  a.download = "MeskAtul-Masabhi-Shanto-CV.png";
+
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
 });
 
 const glow = $("#mouseGlow"), cursor = $(".cursor");
