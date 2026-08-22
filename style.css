@@ -381,7 +381,7 @@ nav a.active:after {
   font-weight: 700;
   background: linear-gradient(90deg, #3b82f6, #06b6d4);
   -webkit-background-clip: text;
-  color: transparent
+  color: transparent;
 }
 
 .typing b {
